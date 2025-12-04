@@ -1,0 +1,7 @@
+#!/bin/sh
+
+# Build the project
+npm run build
+
+# Add the docs folder to the commit
+git add docs/
