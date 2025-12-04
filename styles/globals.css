@@ -252,22 +252,14 @@ body {
 }
 
 .contact-link .icon {
-  font-size: 20px;
+  flex-shrink: 0;
 }
 
-.contact-link.phone {
-  background: #e8f5e9;
-  color: #2e7d32;
-}
-
-.contact-link.whatsapp {
-  background: #e8f5e9;
-  color: #25d366;
-}
-
+.contact-link.phone,
+.contact-link.whatsapp,
 .contact-link.instagram {
-  background: #fce4ec;
-  color: #e91e63;
+  background: #f7f7f7;
+  color: #444;
 }
 
 /* Description */
