@@ -1,7 +1,28 @@
 import Link from "next/link";
+import { useEffect } from "react";
 import { data } from "../data/businesses";
 
+function normalizeString(str: string): string {
+  return str
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/\s+/g, "");
+}
+
 export default function Home() {
+  useEffect(() => {
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      const element = document.getElementById(hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }, 100);
+      }
+    }
+  }, []);
+
   return (
     <div className="container">
       <header className="header">
@@ -11,7 +32,7 @@ export default function Home() {
 
       <main>
         {data.map(town => (
-          <section key={town.town} className="town-section">
+          <section key={town.town} id={normalizeString(town.town)} className="town-section">
             <h2 className="town-title">{town.town}</h2>
 
             <div className="business-list">
