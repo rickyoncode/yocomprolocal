@@ -34,7 +34,7 @@ export default function BusinessCard({ business }: Props) {
     );
   }
 
-  const radarEmbed = `https://maps.radar.com/embed/?publishableKey=prj_live_pk_a52452173d95e1bc011a4e4cc350dbb5fc5a293c&center=${business.coords.lat},${business.coords.lng}&zoom=15&marker=${business.coords.lat},${business.coords.lng}`;
+  const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${business.coords.lat},${business.coords.lng}`;
 
   return (
     <div className="container">
@@ -49,16 +49,15 @@ export default function BusinessCard({ business }: Props) {
           <p className="business-address">{business.address}</p>
         )}
 
-        <div className="map-container">
-          <iframe
-            src={radarEmbed}
-            width="100%"
-            height="250"
-            style={{ border: 0, borderRadius: '8px' }}
-            allowFullScreen
+        <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" className="map-container">
+          <img
+            src={`/img/maps/${business.id}.png`}
+            alt={`Mapa de ${business.name}`}
+            className="map-image"
             loading="lazy"
-          ></iframe>
-        </div>
+          />
+          <span className="map-overlay">Ver en Google Maps</span>
+        </a>
 
         <div className="contact-links">
           {business.phone && (

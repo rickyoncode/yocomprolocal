@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && touch docs/.nojekyll && echo 'ycl.codename.cl' > docs/CNAME",
+    "generate-maps": "node scripts/generate-maps.js",
     "start": "next start",
     "prepare": "husky"
   },
