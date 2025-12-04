@@ -16,87 +16,212 @@ export interface Town {
 
 export const data: Town[] = [
   {
+    town: "Valdivia",
+    businesses: [
+      {
+        id: "v1",
+        name: "Casa de Guarda",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8142, lng: -73.2459 },
+        phone: "",
+        whatsapp: "",
+        instagram: "https://www.instagram.com/casadeguarda/",
+        description: "Emporio y tienda local en Valdivia."
+      },
+      {
+        id: "v2",
+        name: "El Granero",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8142, lng: -73.2459 },
+        phone: "",
+        whatsapp: "",
+        instagram: "",
+        description: "Tienda de productos naturales y locales."
+      },
+      {
+        id: "v3",
+        name: "La Rotonda",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8142, lng: -73.2459 },
+        phone: "",
+        whatsapp: "",
+        instagram: "",
+        description: "Comercio local en Valdivia."
+      },
+      {
+        id: "v4",
+        name: "Teja Market",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8142, lng: -73.2459 },
+        phone: "",
+        whatsapp: "",
+        instagram: "",
+        description: "Minimarket con productos locales: Nobleza Artesanal, Ají Rey Trebol, Santo Grano Café, Taller Dulce, Valquillo, Cerveza Mad Charlies, Mermeladas Viola, La Granolera, Pastelería Trica, Cecinas Campero."
+      },
+      {
+        id: "v5",
+        name: "Espacio Colab",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8196, lng: -73.2424 },
+        phone: "+56934829791",
+        whatsapp: "https://wa.me/56934829791",
+        instagram: "https://www.instagram.com/comparte.cafe",
+        description: "Café y espacio colaborativo. Productos locales: miel, mermeladas, cuchuflí, alfajores."
+      },
+      {
+        id: "v6",
+        name: "Barbudo Growler",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8185, lng: -73.2456 },
+        phone: "+56968756859",
+        whatsapp: "https://wa.me/56968756859",
+        instagram: "https://www.instagram.com/barbudogrowler",
+        description: "Tienda especializada en cervezas artesanales (más de 20 variedades), chocolates, dulces, kombuchas e hidromiel."
+      },
+      {
+        id: "v7",
+        name: "Café Poiesis",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8142, lng: -73.2459 },
+        phone: "+56937576440",
+        whatsapp: "https://wa.me/56937576440",
+        instagram: "https://www.instagram.com/cafepoiesis",
+        description: "Café cultural en Yungay 768, Valdivia."
+      },
+      {
+        id: "v8",
+        name: "Trama Taller",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8142, lng: -73.2459 },
+        phone: "+56957906606",
+        whatsapp: "https://wa.me/56957906606",
+        instagram: "https://www.instagram.com/trama.tiendataller",
+        description: "Tienda taller de diseño y artesanía en Yungay 768, Valdivia."
+      },
+      {
+        id: "v9",
+        name: "Librería Gato Caulle",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8142, lng: -73.2459 },
+        phone: "+56961514101",
+        whatsapp: "https://wa.me/56961514101",
+        instagram: "https://www.instagram.com/gatocaulle",
+        description: "Librería independiente en Yungay 768, Valdivia."
+      },
+      {
+        id: "v10",
+        name: "Cosmética Natural Ganesha",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8142, lng: -73.2459 },
+        phone: "+56988892155",
+        whatsapp: "https://wa.me/56988892155",
+        instagram: "https://www.instagram.com/ganeshanatural",
+        description: "Cosmética natural y productos de cuidado personal en Yungay 768, Valdivia."
+      },
+      {
+        id: "v11",
+        name: "Casa Gawa",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8142, lng: -73.2459 },
+        phone: "+56976033544",
+        whatsapp: "https://wa.me/56976033544",
+        instagram: "https://www.instagram.com/casa_gawa",
+        description: "Papelería y artículos de diseño en Yungay 768, Valdivia."
+      },
+      {
+        id: "v12",
+        name: "Bio Despensa",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8142, lng: -73.2459 },
+        phone: "+56984692684",
+        whatsapp: "https://wa.me/56984692684",
+        instagram: "https://www.instagram.com/biodespensa.cl",
+        description: "Productos orgánicos y naturales en Yungay 768, Valdivia."
+      },
+      {
+        id: "v13",
+        name: "Carnicería Vegana Del Río",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8142, lng: -73.2459 },
+        phone: "+56983704730",
+        whatsapp: "https://wa.me/56983704730",
+        instagram: "https://www.instagram.com/delrio.carniceriavegana",
+        description: "Productos veganos y alternativas a la carne en Cochrane 489-1, Valdivia."
+      },
+      {
+        id: "v14",
+        name: "Sensorial",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8142, lng: -73.2459 },
+        phone: "",
+        whatsapp: "",
+        instagram: "",
+        description: "Tienda de productos sensoriales y bienestar en Valdivia."
+      }
+    ]
+  },
+  {
     town: "Paillaco",
     businesses: [
       {
-        id: "n1",
-        name: "Panadería Don José",
-        images: ["/img/n1-1.jpg", "/img/n1-2.jpg"],
-        coords: { lat: -40.072, lng: -72.866 },
-        phone: "+56911111111",
-        whatsapp: "https://wa.me/56911111111",
-        instagram: "https://instagram.com/panaderiadonjose",
-        description: "La mejor panadería artesanal de Paillaco. Pan amasado, empanadas y pasteles caseros todos los días."
-      },
-      {
-        id: "n2",
-        name: "Ferretería El Martillo",
-        images: ["/img/n2-1.jpg"],
-        coords: { lat: -40.073, lng: -72.867 },
-        phone: "+56922222222",
-        whatsapp: "https://wa.me/56922222222",
-        instagram: "",
-        description: "Todo en herramientas y materiales de construcción. Atención personalizada y los mejores precios."
-      },
-      {
-        id: "n3",
-        name: "Verdulería La Huerta",
-        images: ["/img/n3-1.jpg", "/img/n3-2.jpg", "/img/n3-3.jpg"],
-        coords: { lat: -40.071, lng: -72.865 },
-        phone: "+56933333333",
-        whatsapp: "https://wa.me/56933333333",
-        instagram: "https://instagram.com/lahuertapaillaco",
-        description: "Frutas y verduras frescas directo del campo. Productos orgánicos y de temporada."
+        id: "p1",
+        name: "Restaurante Nueva Estación",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -40.0714, lng: -72.8697 },
+        phone: "+56998107350",
+        whatsapp: "https://wa.me/56998107350",
+        instagram: "https://www.instagram.com/nueva.estacion.cl/",
+        description: "Café y restaurante en 18 de Octubre 840, Paillaco. Trabaja con proveedores locales: Aneley Suyai (joyería), Toqui Taller (artesanía en cuero y lana), LaserCraft (grabado y corte láser)."
       }
     ]
   },
   {
-    town: "La Unión",
+    town: "Los Lagos",
     businesses: [
       {
-        id: "n4",
-        name: "Restaurante El Fogón",
-        images: ["/img/n4-1.jpg", "/img/n4-2.jpg"],
-        coords: { lat: -40.293, lng: -73.084 },
-        phone: "+56944444444",
-        whatsapp: "https://wa.me/56944444444",
-        instagram: "https://instagram.com/elfogonlaunion",
-        description: "Comida típica chilena. Cazuelas, asados y mariscos frescos. Ambiente familiar."
-      },
-      {
-        id: "n5",
-        name: "Librería y Papelería Central",
-        images: ["/img/n5-1.jpg"],
-        coords: { lat: -40.294, lng: -73.083 },
-        phone: "+56955555555",
+        id: "ll1",
+        name: "Minimarket T21",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8614, lng: -72.8264 },
+        phone: "",
         whatsapp: "",
         instagram: "",
-        description: "Artículos escolares, libros y servicios de fotocopiado. Tu aliado para el estudio."
+        description: "Minimarket con productos locales en Los Lagos."
+      },
+      {
+        id: "ll2",
+        name: "GoMarket",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.8614, lng: -72.8264 },
+        phone: "+56957621088",
+        whatsapp: "https://wa.me/56957621088",
+        instagram: "https://www.instagram.com/gomarket_cl",
+        description: "Minimarket en Avenida 11 de Septiembre 117, Los Lagos. Productos locales: Natucrafts, Aguas Newenko, Colmenares Pancul, Mermeladas Flor."
       }
     ]
   },
   {
-    town: "Río Bueno",
+    town: "Panguipulli",
     businesses: [
       {
-        id: "n6",
-        name: "Carnicería Don Pedro",
-        images: ["/img/n6-1.jpg", "/img/n6-2.jpg"],
-        coords: { lat: -40.333, lng: -72.958 },
-        phone: "+56966666666",
-        whatsapp: "https://wa.me/56966666666",
-        instagram: "https://instagram.com/carniceriadonpedro",
-        description: "Carnes de primera calidad. Cortes especiales para asados y parrilladas."
+        id: "pg1",
+        name: "Casa Boqui",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.6433, lng: -72.3322 },
+        phone: "",
+        whatsapp: "",
+        instagram: "https://www.instagram.com/hostalcasaboqui/",
+        description: "Emporio y hostal con productos locales: miel, agua, fermentos, encurtidos, artesanía en madera y lana, pizzas, ilustraciones, cerámica en greda."
       },
       {
-        id: "n7",
-        name: "Peluquería Estilo",
-        images: ["/img/n7-1.jpg"],
-        coords: { lat: -40.332, lng: -72.957 },
-        phone: "+56977777777",
-        whatsapp: "https://wa.me/56977777777",
-        instagram: "https://instagram.com/estiloriobueno",
-        description: "Cortes modernos y clásicos. Atención para toda la familia. Reserva tu hora."
+        id: "pg2",
+        name: "Almacén Huellahue",
+        images: ["/img/placeholder.jpg"],
+        coords: { lat: -39.6433, lng: -72.3322 },
+        phone: "+56971278140",
+        whatsapp: "https://wa.me/56971278140",
+        instagram: "https://www.facebook.com/share/14pfLwfnv2/",
+        description: "Almacén en Huellahue, Panguipulli. Productos locales: miel, productos de huertas locales, cerveza artesanal, vinagre de manzana. Proveedores: Frutería Coz Coz, Apícola Rena, Llagar de Barría."
       }
     ]
   }
