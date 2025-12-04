@@ -14,8 +14,12 @@ export default function Home() {
   useEffect(() => {
     const hash = window.location.hash.slice(1);
     if (hash) {
+      // Immediately scroll to top to prevent browser's instant jump
+      window.scrollTo(0, 0);
+
       const element = document.getElementById(hash);
       if (element) {
+        // Small delay to ensure DOM is ready, then smooth scroll
         setTimeout(() => {
           element.scrollIntoView({ behavior: "smooth", block: "start" });
         }, 100);
