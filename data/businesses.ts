@@ -2,6 +2,7 @@ export interface Business {
   id: string;
   name: string;
   images: string[];
+  address: string;
   coords: { lat: number; lng: number };
   phone: string;
   whatsapp: string;
@@ -22,6 +23,7 @@ export const data: Town[] = [
         id: "ll2",
         name: "GoMarket",
         images: ["/img/placeholder.jpg"],
+        address: "Avenida 11 de Septiembre 117, Los Lagos",
         coords: { lat: -39.8614, lng: -72.8264 },
         phone: "+56957621088",
         whatsapp: "https://wa.me/56957621088",
@@ -32,6 +34,7 @@ export const data: Town[] = [
         id: "ll1",
         name: "Minimarket T21",
         images: ["/img/placeholder.jpg"],
+        address: "Los Lagos",
         coords: { lat: -39.8614, lng: -72.8264 },
         phone: "",
         whatsapp: "",
@@ -47,6 +50,7 @@ export const data: Town[] = [
         id: "p1",
         name: "Restaurante Nueva Estación",
         images: ["/img/placeholder.jpg"],
+        address: "18 de Octubre 840, Paillaco",
         coords: { lat: -40.0714, lng: -72.8697 },
         phone: "+56998107350",
         whatsapp: "https://wa.me/56998107350",
@@ -62,7 +66,8 @@ export const data: Town[] = [
         id: "pg2",
         name: "Almacén Huellahue",
         images: ["/img/placeholder.jpg"],
-        coords: { lat: -39.6433, lng: -72.3322 },
+        address: "Huellahue, Panguipulli",
+        coords: { lat: -39.6142, lng: -72.3654 },
         phone: "+56971278140",
         whatsapp: "https://wa.me/56971278140",
         instagram: "https://www.facebook.com/share/14pfLwfnv2/",
@@ -72,9 +77,10 @@ export const data: Town[] = [
         id: "pg1",
         name: "Casa Boqui",
         images: ["/img/placeholder.jpg"],
+        address: "José Miguel Carrera 631, Panguipulli",
         coords: { lat: -39.6433, lng: -72.3322 },
-        phone: "",
-        whatsapp: "",
+        phone: "+56975443804",
+        whatsapp: "https://wa.me/56975443804",
         instagram: "https://www.instagram.com/hostalcasaboqui/",
         description: "Emporio y hostal con productos locales: miel, agua, fermentos, encurtidos, artesanía en madera y lana, pizzas, ilustraciones, cerámica en greda."
       }
@@ -87,16 +93,18 @@ export const data: Town[] = [
         id: "v6",
         name: "Barbudo Growler",
         images: ["/img/placeholder.jpg"],
+        address: "Beauchef 641, Valdivia",
         coords: { lat: -39.8185, lng: -73.2456 },
         phone: "+56968756859",
         whatsapp: "https://wa.me/56968756859",
         instagram: "https://www.instagram.com/barbudogrowler",
-        description: "Tienda especializada en cervezas artesanales (más de 20 variedades), chocolates, dulces, kombuchas e hidromiel."
+        description: "Tienda especializada en cervezas artesanales (más de 20 variedades), chocolates, dulces, kombuchas e hidromiel. Ubicado al costado trasero de Mall Plaza Los Ríos."
       },
       {
         id: "v12",
         name: "Bio Despensa",
         images: ["/img/placeholder.jpg"],
+        address: "Yungay 768, Valdivia",
         coords: { lat: -39.8142, lng: -73.2459 },
         phone: "+56984692684",
         whatsapp: "https://wa.me/56984692684",
@@ -107,6 +115,7 @@ export const data: Town[] = [
         id: "v7",
         name: "Café Poiesis",
         images: ["/img/placeholder.jpg"],
+        address: "Yungay 768, Valdivia",
         coords: { lat: -39.8142, lng: -73.2459 },
         phone: "+56937576440",
         whatsapp: "https://wa.me/56937576440",
@@ -117,26 +126,29 @@ export const data: Town[] = [
         id: "v13",
         name: "Carnicería Vegana Del Río",
         images: ["/img/placeholder.jpg"],
-        coords: { lat: -39.8142, lng: -73.2459 },
+        address: "Cochrane 489, Valdivia",
+        coords: { lat: -39.8138, lng: -73.2465 },
         phone: "+56983704730",
         whatsapp: "https://wa.me/56983704730",
         instagram: "https://www.instagram.com/delrio.carniceriavegana",
-        description: "Productos veganos y alternativas a la carne en Cochrane 489-1, Valdivia."
+        description: "Primera carnicería vegana de Valdivia. Embutidos, seitán y soja para asados. Envíos sustentables con Cargo Cleta."
       },
       {
         id: "v1",
         name: "Casa de Guarda",
         images: ["/img/placeholder.jpg"],
+        address: "Valdivia",
         coords: { lat: -39.8142, lng: -73.2459 },
         phone: "",
         whatsapp: "",
         instagram: "https://www.instagram.com/casadeguarda/",
-        description: "Emporio y tienda local en Valdivia."
+        description: "Emporio dedicado a los productores locales de la región de Los Ríos."
       },
       {
         id: "v11",
         name: "Casa Gawa",
         images: ["/img/placeholder.jpg"],
+        address: "Yungay 768, Valdivia",
         coords: { lat: -39.8142, lng: -73.2459 },
         phone: "+56976033544",
         whatsapp: "https://wa.me/56976033544",
@@ -147,6 +159,7 @@ export const data: Town[] = [
         id: "v10",
         name: "Cosmética Natural Ganesha",
         images: ["/img/placeholder.jpg"],
+        address: "Yungay 768, Valdivia",
         coords: { lat: -39.8142, lng: -73.2459 },
         phone: "+56988892155",
         whatsapp: "https://wa.me/56988892155",
@@ -157,6 +170,7 @@ export const data: Town[] = [
         id: "v2",
         name: "El Granero",
         images: ["/img/placeholder.jpg"],
+        address: "Valdivia",
         coords: { lat: -39.8142, lng: -73.2459 },
         phone: "",
         whatsapp: "",
@@ -167,26 +181,29 @@ export const data: Town[] = [
         id: "v5",
         name: "Espacio Colab",
         images: ["/img/placeholder.jpg"],
+        address: "Caupolicán 201, Valdivia",
         coords: { lat: -39.8196, lng: -73.2424 },
         phone: "+56934829791",
         whatsapp: "https://wa.me/56934829791",
         instagram: "https://www.instagram.com/comparte.cafe",
-        description: "Café y espacio colaborativo. Productos locales: miel, mermeladas, cuchuflí, alfajores."
+        description: "Café y espacio colaborativo en Galería Caupolicán. Productos locales: miel, mermeladas, cuchuflí, alfajores."
       },
       {
         id: "v3",
         name: "La Rotonda",
         images: ["/img/placeholder.jpg"],
-        coords: { lat: -39.8142, lng: -73.2459 },
+        address: "Los Robles 500, Valdivia",
+        coords: { lat: -39.8350, lng: -73.2380 },
         phone: "",
         whatsapp: "",
         instagram: "",
-        description: "Comercio local en Valdivia."
+        description: "Licorería y comercio local en Valdivia."
       },
       {
         id: "v9",
         name: "Librería Gato Caulle",
         images: ["/img/placeholder.jpg"],
+        address: "Yungay 768, Valdivia",
         coords: { lat: -39.8142, lng: -73.2459 },
         phone: "+56961514101",
         whatsapp: "https://wa.me/56961514101",
@@ -197,6 +214,7 @@ export const data: Town[] = [
         id: "v14",
         name: "Sensorial",
         images: ["/img/placeholder.jpg"],
+        address: "Valdivia",
         coords: { lat: -39.8142, lng: -73.2459 },
         phone: "",
         whatsapp: "",
@@ -207,16 +225,18 @@ export const data: Town[] = [
         id: "v4",
         name: "Teja Market",
         images: ["/img/placeholder.jpg"],
-        coords: { lat: -39.8142, lng: -73.2459 },
-        phone: "",
-        whatsapp: "",
+        address: "Los Helechos 500, Isla Teja, Valdivia",
+        coords: { lat: -39.8280, lng: -73.2520 },
+        phone: "+56632226634",
+        whatsapp: "https://wa.me/56995586029",
         instagram: "",
-        description: "Minimarket con productos locales: Nobleza Artesanal, Ají Rey Trebol, Santo Grano Café, Taller Dulce, Valquillo, Cerveza Mad Charlies, Mermeladas Viola, La Granolera, Pastelería Trica, Cecinas Campero."
+        description: "Supermercado en Isla Teja con productos locales: Nobleza Artesanal, Ají Rey Trebol, Santo Grano Café, Taller Dulce, Valquillo, Cerveza Mad Charlies, Mermeladas Viola, La Granolera, Pastelería Trica, Cecinas Campero."
       },
       {
         id: "v8",
         name: "Trama Taller",
         images: ["/img/placeholder.jpg"],
+        address: "Yungay 768, Valdivia",
         coords: { lat: -39.8142, lng: -73.2459 },
         phone: "+56957906606",
         whatsapp: "https://wa.me/56957906606",

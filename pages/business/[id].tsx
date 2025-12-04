@@ -45,6 +45,10 @@ export default function BusinessCard({ business }: Props) {
       <div className="business-card">
         <h1 className="business-title">{business.name}</h1>
 
+        {business.address && (
+          <p className="business-address">{business.address}</p>
+        )}
+
         <div className="map-container">
           <iframe
             src={radarEmbed}

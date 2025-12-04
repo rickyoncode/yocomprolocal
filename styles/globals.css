@@ -186,6 +186,13 @@ body {
 .business-title {
   font-size: 24px;
   color: #333;
+  margin-bottom: 8px;
+}
+
+/* Business address */
+.business-address {
+  font-size: 14px;
+  color: #666;
   margin-bottom: 16px;
 }
 
