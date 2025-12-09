@@ -8,7 +8,16 @@ export default function Logo({ className }: { className?: string }) {
       className={className}
     >
       <defs>
-        <style>{`.cls-1,.cls-2,.cls-4,.cls-5,.cls-6,.cls-7,.cls-8{fill:#000;}.cls-3{fill:none;}`}</style>
+        <style>{`
+          .cls-1{fill:var(--ycl-orange);}
+          .cls-2{fill:var(--ycl-blue);}
+          .cls-3{fill:none;}
+          .cls-4{fill:var(--ycl-pink);}
+          .cls-5{fill:var(--ycl-dark-brown);}
+          .cls-6{fill:var(--ycl-red);}
+          .cls-7{fill:var(--ycl-dark-green);}
+          .cls-8{fill:var(--ycl-light-green);}
+        `}</style>
       </defs>
       <path className="cls-1" d="M256,56.92h-7.17l-1.06,6.61h-8.66l1.07-6.61h-6l-1.06,6.61h-8.66l1.07-6.61h-4.36V46.24h6.18l.78-4.28h-5.25V31.28h7L231,24.87h8.65l-1.07,6.41h6l1.07-6.41h8.65l-1.07,6.41h4.47V42H251.4l-.78,4.28H256Zm-20.46-10.2h6.79l.88-5.18h-6.78Z"/>
       <path className="cls-2" d="M272.72,49.86,258.16,25h14.47l6.62,12.68L285.92,25H300.2L285.62,49.7V63.53h-12.9Z"/>

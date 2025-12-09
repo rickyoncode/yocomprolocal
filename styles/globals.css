@@ -1,3 +1,38 @@
+/* Color Palette - Edit these to change the website colors */
+:root {
+  /* Main colors */
+  --color-primary: #2d7a4d;
+  --color-text: #333;
+  --color-text-light: #666;
+  --color-text-muted: #999;
+  --color-background: #f5f5f5;
+  --color-surface: #fff;
+  --color-border: #e0e0e0;
+  --color-border-light: #eee;
+  --color-hover: #f9f9f9;
+  --color-contact-bg: #f7f7f7;
+  --color-contact-text: #444;
+
+  /* YCL Logo colors (grayscale) */
+  --ycl-orange: #555;
+  --ycl-blue: #333;
+  --ycl-pink: #444;
+  --ycl-dark-brown: #222;
+  --ycl-red: #444;
+  --ycl-dark-green: #333;
+  --ycl-light-green: #666;
+
+  /* YCL Logo colors (original)
+  --ycl-orange: #f29100;
+  --ycl-blue: #009ee2;
+  --ycl-pink: #d60b51;
+  --ycl-dark-brown: #582c29;
+  --ycl-red: #be1d1b;
+  --ycl-dark-green: #00903e;
+  --ycl-light-green: #39a935;
+  */
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -10,8 +45,8 @@ html {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-  background-color: #f5f5f5;
-  color: #333;
+  background-color: var(--color-background);
+  color: var(--color-text);
   line-height: 1.6;
 }
 
@@ -20,14 +55,14 @@ body {
   margin: 0 auto;
   padding: 16px;
   min-height: 100vh;
-  background-color: #fff;
+  background-color: var(--color-surface);
 }
 
 /* Header */
 .header {
   text-align: center;
   padding: 24px 0;
-  border-bottom: 2px solid #e0e0e0;
+  border-bottom: 2px solid var(--color-border);
   margin-bottom: 24px;
 }
 
@@ -55,13 +90,13 @@ body {
 }
 
 .header h1 {
-  color: #2d7a4d;
+  color: var(--color-primary);
   font-size: 28px;
   margin-bottom: 4px;
 }
 
 .subtitle {
-  color: #666;
+  color: var(--color-text-light);
   font-size: 14px;
 }
 
@@ -73,15 +108,15 @@ body {
 
 .town-title {
   font-size: 18px;
-  color: #2d7a4d;
+  color: var(--color-primary);
   padding: 8px 0;
-  border-bottom: 1px solid #e0e0e0;
+  border-bottom: 1px solid var(--color-border);
   margin-bottom: 8px;
 }
 
 /* Business list */
 .business-list {
-  background: #fff;
+  background: var(--color-surface);
 }
 
 .business-link {
@@ -94,39 +129,39 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 16px 12px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-border-light);
   cursor: pointer;
   transition: background-color 0.2s;
 }
 
 .business-item:hover {
-  background-color: #f9f9f9;
+  background-color: var(--color-hover);
 }
 
 .business-name {
   font-size: 16px;
-  color: #333;
+  color: var(--color-text);
 }
 
 .arrow {
   font-size: 24px;
-  color: #999;
+  color: var(--color-text-muted);
 }
 
 /* Footer */
 .footer {
   text-align: center;
   padding: 24px 0;
-  color: #999;
+  color: var(--color-text-muted);
   font-size: 12px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-border-light);
   margin-top: 24px;
 }
 
 /* Back link */
 .back-link {
   display: inline-block;
-  color: #2d7a4d;
+  color: var(--color-primary);
   text-decoration: none;
   font-size: 14px;
   margin-bottom: 16px;
@@ -138,7 +173,7 @@ body {
 
 /* Business card */
 .business-card {
-  background: #fff;
+  background: var(--color-surface);
 }
 
 /* Carousel */
@@ -160,7 +195,7 @@ body {
   height: 220px;
   object-fit: cover;
   border-radius: 8px;
-  background-color: #e0e0e0;
+  background-color: var(--color-border);
 }
 
 .carousel-btn {
@@ -208,14 +243,14 @@ body {
 /* Business title */
 .business-title {
   font-size: 24px;
-  color: #333;
+  color: var(--color-text);
   margin-bottom: 8px;
 }
 
 /* Business address */
 .business-address {
   font-size: 14px;
-  color: #666;
+  color: var(--color-text-light);
   margin-bottom: 16px;
 }
 
@@ -281,25 +316,25 @@ body {
 .contact-link.phone,
 .contact-link.whatsapp,
 .contact-link.instagram {
-  background: #f7f7f7;
-  color: #444;
+  background: var(--color-contact-bg);
+  color: var(--color-contact-text);
 }
 
 /* Description */
 .description {
   padding-top: 16px;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-border-light);
 }
 
 .description h3 {
   font-size: 16px;
-  color: #666;
+  color: var(--color-text-light);
   margin-bottom: 8px;
 }
 
 .description p {
   font-size: 15px;
-  color: #555;
+  color: var(--color-text-light);
   line-height: 1.7;
 }
 
@@ -311,6 +346,6 @@ body {
 
 .not-found p {
   font-size: 18px;
-  color: #666;
+  color: var(--color-text-light);
   margin-bottom: 16px;
 }
