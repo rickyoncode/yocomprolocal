@@ -61,8 +61,8 @@ export default function Home() {
       <footer className="footer">
         <p>
           Hecho para nuestra comunidad por{' '}
-          <a href="https://instagram.com/lasercraftsss" target="_blank" rel="noopener noreferrer">
-            @lasercraftsss
+          <a href="https://www.instagram.com/lasercraftss" target="_blank" rel="noopener noreferrer">
+            @lasercraftss
           </a>
           {' '}y{' '}
           <a href="https://codename.cl" target="_blank" rel="noopener noreferrer">

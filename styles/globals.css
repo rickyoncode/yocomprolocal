@@ -1,6 +1,33 @@
 /* Color Palette - Edit these to change the website colors */
 :root {
-  /* Main colors */
+  /* Main colors (dark mode) */
+  --color-primary: #c9a66b;
+  --color-text: #e5e5e5;
+  --color-text-light: #a3a3a3;
+  --color-text-muted: #737373;
+  --color-background: #0a0a0a;
+  --color-surface: #171717;
+  --color-border: #333;
+  --color-border-light: #262626;
+  --color-hover: #262626;
+  --color-contact-bg: #262626;
+  --color-contact-text: #e5e5e5;
+
+  /* Main colors (biolibre style - clean minimalist)
+  --color-primary: #2968C8;
+  --color-text: #1a1a1a;
+  --color-text-light: #555;
+  --color-text-muted: #888;
+  --color-background: #fff;
+  --color-surface: #fff;
+  --color-border: #e5e5e5;
+  --color-border-light: #f0f0f0;
+  --color-hover: #fafafa;
+  --color-contact-bg: #f5f5f5;
+  --color-contact-text: #1a1a1a;
+  */
+
+  /* Main colors (original light mode)
   --color-primary: #2d7a4d;
   --color-text: #333;
   --color-text-light: #666;
@@ -12,8 +39,18 @@
   --color-hover: #f9f9f9;
   --color-contact-bg: #f7f7f7;
   --color-contact-text: #444;
+  */
 
-  /* YCL Logo colors (grayscale) */
+  /* YCL Logo colors (grayscale for dark mode) */
+  --ycl-orange: #aaa;
+  --ycl-blue: #ccc;
+  --ycl-pink: #bbb;
+  --ycl-dark-brown: #999;
+  --ycl-red: #bbb;
+  --ycl-dark-green: #ccc;
+  --ycl-light-green: #ddd;
+
+  /* YCL Logo colors (grayscale for light)
   --ycl-orange: #555;
   --ycl-blue: #333;
   --ycl-pink: #444;
@@ -21,6 +58,7 @@
   --ycl-red: #444;
   --ycl-dark-green: #333;
   --ycl-light-green: #666;
+  */
 
   /* YCL Logo colors (original)
   --ycl-orange: #f29100;
@@ -77,6 +115,7 @@ body {
 .header-logo-img {
   height: 50px;
   width: auto;
+  filter: invert(1);
 }
 
 .header-logo-svg {
@@ -85,7 +124,7 @@ body {
 }
 
 .header-heart {
-  color: #000;
+  color: var(--color-text);
   font-size: 20px;
 }
 
@@ -156,6 +195,16 @@ body {
   font-size: 12px;
   border-top: 1px solid var(--color-border-light);
   margin-top: 24px;
+}
+
+.footer a {
+  color: var(--color-text-muted);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
 
 /* Back link */
