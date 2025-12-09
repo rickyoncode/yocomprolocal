@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useEffect } from "react";
 import { data } from "../data/businesses";
+import Logo from "../components/Logo";
 
 function normalizeString(str: string): string {
   return str
@@ -30,7 +31,11 @@ export default function Home() {
   return (
     <div className="container">
       <header className="header">
-        <h1>#YoComproLocal</h1>
+        <div className="header-logos">
+          <Logo className="header-logo-svg" />
+          <span className="header-heart">❤</span>
+          <img src="/img/lasercrafts.jpg" alt="Lasercrafts" className="header-logo-img" />
+        </div>
         <p className="subtitle">Apoya a los negocios de tu comunidad</p>
       </header>
 

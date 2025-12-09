@@ -31,6 +31,29 @@ body {
   margin-bottom: 24px;
 }
 
+.header-logos {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.header-logo-img {
+  height: 50px;
+  width: auto;
+}
+
+.header-logo-svg {
+  height: 35px;
+  width: auto;
+}
+
+.header-heart {
+  color: #000;
+  font-size: 20px;
+}
+
 .header h1 {
   color: #2d7a4d;
   font-size: 28px;
