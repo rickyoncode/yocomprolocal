@@ -51,7 +51,7 @@ export default function BusinessCard({ business }: Props) {
 
         <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" className="map-container">
           <img
-            src={`/img/maps/${business.id}.png`}
+            src={`/img/maps/${business.id}.png?v=2`}
             alt={`Mapa de ${business.name}`}
             className="map-image"
             loading="lazy"
